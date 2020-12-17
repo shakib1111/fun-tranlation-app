@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bana talk</title>
     
-</head>
+
 <style>
     h1{
         background-color: #FCA5A5 ;
@@ -18,31 +18,33 @@
         height: 100px;
         width: 80%;
         padding: 1rem;
-        border-radius: 0rem;
-        margin-top: 5rem;
+        margin: 1rem;
         margin-bottom: 2rem;
         font-weight: bolder;
     }
 
-    button{
-        font-weight: bolder;
+    #output{
+        border: 1px solid black;
+        height: 9vh;
+        width: 80%;
+        margin: 1rem;
+        padding: 1rem;
     }
 
-
-
 </style>
+</head>
 <body>
     <h1>Banana Talk</h1>
-    <div>
-        <div>
-            <textarea placeholder="enter your text"></textarea>
-        </div>
+
+        <textarea id="txt-input" placeholder="enter your text"></textarea>
+ 
         <button id="btn-translate">Translate</button>
-    </div>
+ 
+
+        <div style="font-size: larger;"> output will come here </div>
+        <div id="output"></div>
 
 
-
-
-    <script src="app.js"></script>
+    <script src="app.js" type="text/javascript"></script>
 </body>
 </html>
