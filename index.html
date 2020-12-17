@@ -7,12 +7,17 @@
     
 
 <style>
+    body{
+        background-color: #FBCFE8;
+    }
     h1{
-        background-color: #FCA5A5 ;
+        color:rgb(201, 0, 0);
+        background-color: #9CA3AF ;
         padding: 1rem;
         text-align: center;
         text-decoration: underline;
         font-family: Press Start 2P;
+        border-radius: 0.5rem;
     }
     textarea{
         height: 100px;
@@ -21,27 +26,43 @@
         margin: 1rem;
         margin-bottom: 2rem;
         font-weight: bolder;
+        border: 3px solid black;
+        border-radius: 0.5rem;
     }
 
     #output{
-        border: 1px solid black;
+        border: 3px solid black;
         height: 9vh;
         width: 80%;
         margin: 1rem;
         padding: 1rem;
+        background-color: white;
+        border-radius: 0.5rem;
     }
+    button{
+      color: rgb(201, 0, 0);  
+      margin: 1rem;
+      padding: 0.5rem;
+      display: block;
+      border: 3px solid black;
+      border-radius: 0.5rem;
+      background-color:  #9CA3AF;
+      font-weight: bolder;
+    }
+    p{
+        margin: 1rem;
+    }
+    
 
+   
 </style>
 </head>
 <body>
     <h1>Banana Talk</h1>
 
-        <textarea id="txt-input" placeholder="enter your text"></textarea>
- 
-        <button id="btn-translate">Translate</button>
- 
-
-        <div style="font-size: larger;"> output will come here </div>
+        <textarea id="txt-input" placeholder="Enter your text"></textarea>
+        <button  id="btn-translate">Translate</button>
+        <div style="font-size: larger;"><p> Output will come here 👇 </p></div>
         <div id="output"></div>
 
 
